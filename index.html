@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário-HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function analy(){
+            nome = document.getElementById("fname").value;
+            sobrenome = document.getElementById("lname").value;
+            alert("Seu nome é: "+nome+" "+sobrenome);
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulário Sobre Mim</h1>
+    <p>Formulário abaixo:</p>
+    <p id="titulo"></p>
+    <form action="/action_page.php">
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Analy"><br>
+        <label for="lname">Sobrenome:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Alves"><br><br>
+        <input type="button" value="Confirmar" onclick="analy()">
+    </form>
+</body>
+</html>
